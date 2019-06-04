@@ -25,7 +25,7 @@ export default class Home extends Component {
         <h2 className="content">捐助</h2>
         <p className="donation">本站接受以下渠道的捐助:</p>
         <ul>
-          <li key="Paypal" onClick={()=>this.setState({m: 'Paypal'})}>
+          <li key="Paypal">
             <a href="https://paypal.me/zy2019" className="paypal">
               <FontAwesomeIcon icon={faPaypal} size="2x" />
             </a>
