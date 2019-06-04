@@ -1,0 +1,64 @@
+a.paypal {
+    color: #00008b;
+}
+
+h1 {
+    color: #273849;
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 3em;
+    margin-right: 30em;
+    margin-left: 1.6em;
+    padding-right: 13.7em;
+    margin-inline-end: 0px;
+    max-width: 700;
+    min-width: 300;
+}
+
+h2 {
+    position: relative;
+    color: #273849;
+    font-weight: 600;
+    font-size: 1.6em;
+    margin-right: 30em;
+    margin-left: 1.6em;
+    padding-right: 17.3em;
+    padding-left: 0;
+    padding-bottom: 1em;
+    margin-inline-end: 0px;
+    max-width: 700;
+}
+
+h2.star {
+    margin-Top: 2.3em;
+}
+
+p.contribute {
+    margin-right: 14.2em;
+    margin-left: 1.8em;
+    margin-bottom: 4em;
+    padding-right: 3em;
+    padding-left: 1.2em;
+}
+
+p.donation {
+    margin-right: 18.5em;
+    margin-left: 1.6em;
+    margin-bottom: 1.2em;
+}
+
+p.star {
+    margin-right: 17.7em;
+    margin-left: 1.6em;
+    margin-bottom: 11.2em;
+}
+
+ul {
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    margin-right: 1em;
+}

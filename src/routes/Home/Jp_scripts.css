@@ -1,0 +1,6 @@
+@import '../../../node_modules/antd/dist/antd.css';
+
+.extraContent {
+  min-width: 240px;
+  text-align: center;
+}

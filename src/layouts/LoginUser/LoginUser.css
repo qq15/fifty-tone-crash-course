@@ -1,0 +1,27 @@
+#LoginUser {
+  position: absolute;
+  background: url(../../assets/images/kanas.jpg) bottom center no-repeat;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-size: 100% 100%;
+}
+#components-form-demo-normal-login {
+  background: rgba(255, 255, 0, 0.2);
+  border-radius: 10%;
+  padding-top: 1.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-top: 2%;
+  margin-right: 0%;
+  margin-left: 69%;
+}
+  .login-form {
+    max-width: 300px;
+  }
+  .login-form-forgot {
+    float: right;
+  }
+  .login-form-button {
+    width: 100%;
+  }
