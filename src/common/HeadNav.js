@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
-import { Menu, Icon } from 'antd';
+import { Menu, Icon, Popover, Button } from 'antd';
 import './HeadNav.less';
 import { ThemeContext } from '../theme';
 import { Link } from 'react-router-dom';
 import store from '../Store';
+
+const shareContent = (
+  <div>
+    <p><a href="https://www.douban.com">豆瓣</a></p>
+    <p><a href="https://weibo.com">微博</a></p>
+  </div>
+);
 
 export default class HeadNav extends Component {
   static contextType = ThemeContext;
@@ -58,18 +65,24 @@ export default class HeadNav extends Component {
                     </Link>
                   </Menu.Item>
                   <Menu.Item key="aboutme">
-                    <Link to="/home/aboutme">
-                      <Icon type="user" />作者
+                    <Link to="/home/video">
+                      <Icon type="video-camera" />视频
                     </Link>
                   </Menu.Item>
                   <Menu.Item key="share">
-                    <Link to="/home/share">
-                      <Icon type="share-alt" />分享
+                    <Link to="/home/">
+                      <Icon type="share-alt" />
+                      <Popover content={shareContent}
+                        title="SNS" trigger="hover"
+                      >
+                        <Button ghost type="primary">分享</Button>
+                      </Popover>
                     </Link>
                   </Menu.Item>
                   <Menu.Item key="contribute">
                     <Link to="/home/contribute">
-                      <Icon type="money-collect" />贡献
+                      <Icon type="money-collect" />
+                      贡献
                     </Link>
                   </Menu.Item>
                 </Menu>

@@ -41,7 +41,7 @@ export default class Footer extends Component {
             <Card title="Contact" bordered={true} loading={store.getState().logoIsLoading}
               hoverable={true} style={{ height: 200, }}
             >
-              <Icon type="mail" theme="twoTone" /> <a href="mailto:1811639092@qq.com">1811639092@qq.com</a><br /><br />
+              <Icon type="mail" /> <a href="mailto:1811639092@qq.com">1811639092@qq.com</a><br /><br />
               <Icon type="github" /> <a href="https://gitee.com/jsedu">gitee.com/jsedu</a><br /><br />
               <Icon type="wechat" /> zyzyzy20160707
             </Card>
@@ -50,7 +50,7 @@ export default class Footer extends Component {
             <Card title="版权所有" bordered={false} loading={store.getState().logoIsLoading}
               hoverable={true} style={{ height: 200, }}
             >
-              &copy; 2019 <a href="https://jsedu.gitee.io">jsedu.gitee.io</a>,
+              <Icon type="copyright" /> 2019 <a href="https://jsedu.gitee.io">jsedu.gitee.io</a>,
               <br /><br /> all rights reserved <br /><br />16 级马院思政 705 班张扬
             </Card>
           </Col>
