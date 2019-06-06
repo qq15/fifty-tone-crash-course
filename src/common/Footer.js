@@ -12,7 +12,7 @@ export default class Footer extends Component {
       <div style={{ background: '#ECECEC', padding: '30px' }}>
         <Row gutter={16}>
           <Col span={8}>
-            <Card title="相关资源" bordered={false} loading={store.getState().logoIsLoading}
+            <Card title="相关资源" bordered={false} loading={store.getState().logoIsLoading && window.innerWidth>=740 }
               hoverable={true} style={{ height: 200, }}
             >
               <div style={{ marginTop: -12, marginBottom: -22, }}>

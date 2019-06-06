@@ -9,3 +9,35 @@
 .ant-carousel .slick-slide h3 {
   color: #fff;
 }
+
+div>img {
+  width: 37%;
+  height: 20%;
+  object-fit:cover;
+  margin: auto;
+  margin-top: 0.5em;
+  padding-top: 0.1em;
+}
+
+ul {
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+  margin-top: 0.5em;
+}
+
+img.tooHigh {
+  margin-top: 1.2em;
+  padding-top: 0.1em
+}
+
+li.learnJPImg {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+div.bing {
+}
