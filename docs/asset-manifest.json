@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/fifty-tone-crash-course/static/css/main.c3629c64.chunk.css",
-    "main.js": "/fifty-tone-crash-course/static/js/main.c48cb35f.chunk.js",
-    "main.js.map": "/fifty-tone-crash-course/static/js/main.c48cb35f.chunk.js.map",
+    "main.css": "/fifty-tone-crash-course/static/css/main.14f9a982.chunk.css",
+    "main.js": "/fifty-tone-crash-course/static/js/main.604c45c5.chunk.js",
+    "main.js.map": "/fifty-tone-crash-course/static/js/main.604c45c5.chunk.js.map",
     "runtime~main.js": "/fifty-tone-crash-course/static/js/runtime~main.79ab15e0.js",
     "runtime~main.js.map": "/fifty-tone-crash-course/static/js/runtime~main.79ab15e0.js.map",
-    "static/css/2.8c15aaa8.chunk.css": "/fifty-tone-crash-course/static/css/2.8c15aaa8.chunk.css",
-    "static/js/2.3b0f69c7.chunk.js": "/fifty-tone-crash-course/static/js/2.3b0f69c7.chunk.js",
-    "static/js/2.3b0f69c7.chunk.js.map": "/fifty-tone-crash-course/static/js/2.3b0f69c7.chunk.js.map",
+    "static/css/2.5e86d957.chunk.css": "/fifty-tone-crash-course/static/css/2.5e86d957.chunk.css",
+    "static/js/2.70a7d332.chunk.js": "/fifty-tone-crash-course/static/js/2.70a7d332.chunk.js",
+    "static/js/2.70a7d332.chunk.js.map": "/fifty-tone-crash-course/static/js/2.70a7d332.chunk.js.map",
     "index.html": "/fifty-tone-crash-course/index.html",
-    "precache-manifest.954bfb53c4ee448117d6391d0422f173.js": "/fifty-tone-crash-course/precache-manifest.954bfb53c4ee448117d6391d0422f173.js",
+    "precache-manifest.222e1e6063a2594dd9dd302f05454705.js": "/fifty-tone-crash-course/precache-manifest.222e1e6063a2594dd9dd302f05454705.js",
     "service-worker.js": "/fifty-tone-crash-course/service-worker.js",
-    "static/css/2.8c15aaa8.chunk.css.map": "/fifty-tone-crash-course/static/css/2.8c15aaa8.chunk.css.map",
-    "static/css/main.c3629c64.chunk.css.map": "/fifty-tone-crash-course/static/css/main.c3629c64.chunk.css.map",
+    "static/css/2.5e86d957.chunk.css.map": "/fifty-tone-crash-course/static/css/2.5e86d957.chunk.css.map",
+    "static/css/main.14f9a982.chunk.css.map": "/fifty-tone-crash-course/static/css/main.14f9a982.chunk.css.map",
     "static/media/Alipay.jpg": "/fifty-tone-crash-course/static/media/Alipay.54abf3cd.jpg",
     "static/media/JP_map.png": "/fifty-tone-crash-course/static/media/JP_map.1d5fbebf.png",
+    "static/media/Japanese-alphabet.jpg": "/fifty-tone-crash-course/static/media/Japanese-alphabet.21bcebb1.jpg",
     "static/media/Wechat.jpg": "/fifty-tone-crash-course/static/media/Wechat.81986294.jpg",
     "static/media/btc.jpg": "/fifty-tone-crash-course/static/media/btc.1b9e3e77.jpg",
     "static/media/eth.jpg": "/fifty-tone-crash-course/static/media/eth.417d1cb0.jpg",
-    "static/media/LoginUser.css": "/fifty-tone-crash-course/static/media/kanas.3e9267fb.jpg"
+    "static/media/hira_mnemonics.png": "/fifty-tone-crash-course/static/media/hira_mnemonics.0882ca21.png",
+    "static/media/hiragana-chart.jpg": "/fifty-tone-crash-course/static/media/hiragana-chart.84104b1e.jpg",
+    "static/media/hiraganakatakana2.png": "/fifty-tone-crash-course/static/media/hiraganakatakana2.61e32f01.png",
+    "static/media/LoginUser.css": "/fifty-tone-crash-course/static/media/kanas.3e9267fb.jpg",
+    "static/media/threeWay1.png": "/fifty-tone-crash-course/static/media/threeWay1.dc605f13.png"
   }
 }

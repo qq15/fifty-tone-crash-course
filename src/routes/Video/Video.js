@@ -1,6 +1,8 @@
+/*
 import React, {Component} from 'react';
 import flvjs from './flv';
 import './Video.css';
+
 
 export default class Video extends Component {
 
@@ -68,3 +70,4 @@ export default class Video extends Component {
     );
   }
 }
+*/
