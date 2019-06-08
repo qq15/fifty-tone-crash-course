@@ -6,7 +6,7 @@ h1 {
     color: #273849;
     font-weight: 600;
     font-size: 2em;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-right: 30em;
     margin-left: 1.6em;
     padding-right: 13.7em;
@@ -50,7 +50,7 @@ p.donation {
 p.star {
     margin-right: 17.7em;
     margin-left: 1.6em;
-    margin-bottom: 11.2em;
+    margin-bottom: 2em;
 }
 
 ul {
@@ -61,4 +61,30 @@ ul {
 
 li {
     margin-right: 1em;
+}
+
+div.title {
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: 500;
+  color: #212121;
+  line-height: 26px;
+  height: 26px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+div.description {
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+  line-height: 22px;
+  height: 22px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

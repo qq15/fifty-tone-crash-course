@@ -1,0 +1,27 @@
+div.videoTitle {
+  vertical-align: middle;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  color: #212121;
+  line-height: 26px;
+  height: 26px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+div.videoDescription {
+  vertical-align: middle;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+  line-height: 22px;
+  height: 22px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

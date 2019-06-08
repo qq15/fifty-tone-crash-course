@@ -1,20 +1,25 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Table } from 'antd';
 import store from '../../Store';
 
-export default class FiftyToneMap extends Component {
-  state = {
-    logoIsLoading: false,
-  };
+export default class FiftyToneMap extends PureComponent {
 
   render() {
-    store.subscribe(() => this.setState(
-      Object.assign({}, this.state, store.getState().logoIsLoading)
-    ));
 
     return (
+      <React.Fragment>
+      <div style={{ marginTop: '1em', paddingTop: '1em', }}>
+        <div className="title">
+          <p>五十音图</p>
+        </div>
+        <div className="description">
+          <p>50トーンマップ</p>
+        </div>
       <Table columns={columns} dataSource={data} 
-        scroll={{ x: 1300 }} loading={store.getState().logoIsLoading} />
+        scroll={{ x: 1300 }} loading={store.getState().logoIsLoading}
+      />
+      </div>
+      </React.Fragment>
     );
   }
 }
