@@ -126,18 +126,3 @@ const JpScripts = (props) => (
 );
 
 export default JpScripts;
-/*
-  <h2>
-    平假名
-  </h2>
-  <p>
-    平假名是日语的基本拼音文字(phonetic script)。它代表日语的每个发音。
-    因此，理论上你可以用平假名组成任何日语句子。
-  </p>
-  <h2>
-    片假名
-  </h2>
-  <h2>
-    汉字
-  </h2>
-*/
