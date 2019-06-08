@@ -16,7 +16,7 @@ const { Meta } = Card;
 class TopCarousel extends Component {
   render () {
     return (
-      <div style={{ marginTop: 60, }}>
+      <div style={{ marginTop: '0.03em', }}>
       <Carousel autoplay slide style={{ marginTop: 10, }} effect="fade" >
         <div className="bing">
           <img src={vsImgURL}
