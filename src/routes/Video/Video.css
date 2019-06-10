@@ -25,3 +25,45 @@ div.videoDescription {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+@keyframes barrage{
+   from{
+     z-index: 990;
+     left:100%;
+     transform:translate3d(0,0,0);
+   }
+   to{
+     z-index: 990;
+     left:0;
+     transform:translate3d(-100%,0,0);
+     visibility: hidden;
+   }
+}
+
+@keyframes cover{
+  from{
+    transform:translate3d(0,0,0);
+    visibility: visible;
+  }
+  to{
+    transform:translate3d(0,0,0);
+    visibility: visible;
+  }
+}
+
+.block {
+  position: absolute;
+  margin-top: -5em;
+  animation: barrage 5s linear 0s;
+  font-size: 1.2em;
+}
+
+.scroll_text {
+  font-size: 3em;
+  z-index: 990;
+}
+
+.leftCol {
+  z-index: 999;
+  animation: cover infinite linear 0s;
+}
