@@ -5,8 +5,10 @@ import "./DLayout.less";
 import { Route } from 'react-router-dom';
 import Home from '../../routes/Home/Home';
 import Video from '../../routes/Video/Video';
+import Video2 from '../../routes/Video/Video2';
 import Share from '../../routes/Share/Share';
 import Contribute from '../../routes/Contribute/Contribute';
+import BarrageEtiquette from '../../routes/Barrage_etiquette/barrage_etiq';
 
 export default class DLayout extends Component {
 
@@ -17,8 +19,10 @@ export default class DLayout extends Component {
         <div className="content-wrap">
           <Route path={this.props.match.url+'/'} component={Home} exact/>
           <Route path={this.props.match.url+'/video'} component={Video} />
+          <Route path={this.props.match.url+'/video2'} component={Video2} />
           <Route path={this.props.match.url+'/share'} component={Share} />
           <Route path={this.props.match.url+'/contribute'} component={Contribute} />
+          <Route path={this.props.match.url+'/barrage_etiquette'} component={BarrageEtiquette} />
         </div>
         <Footer />
       </div>

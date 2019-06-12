@@ -7,6 +7,7 @@ div.videoTitle {
   line-height: 26px;
   height: 26px;
   margin-bottom: 12px;
+  margin-Top: 5em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -40,22 +41,14 @@ div.videoDescription {
    }
 }
 
-@keyframes cover{
-  from{
-    transform:translate3d(0,0,0);
-    visibility: visible;
-  }
-  to{
-    transform:translate3d(0,0,0);
-    visibility: visible;
-  }
-}
-
 .block {
   position: absolute;
-  margin-top: -5em;
+  margin-top: -10em;
   animation: barrage 5s linear 0s;
   font-size: 1.2em;
+  color: white;
+  font-weight: 800;
+  z-index: 999;
 }
 
 .scroll_text {
@@ -63,7 +56,9 @@ div.videoDescription {
   z-index: 990;
 }
 
+.tcBtn {
+  display: inline;
+}
+
 .leftCol {
-  z-index: 999;
-  animation: cover infinite linear 0s;
 }
