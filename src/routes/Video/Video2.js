@@ -290,6 +290,24 @@ export default class Video extends PureComponent {
                   dataSource={videoNames}
                   renderItem={item => <List.Item>{item}</List.Item>}
                 />
+                <div style={{display: this.state.selectionListDisplay === 'block' ? 'none' : 'block'}}>
+                  <Link to="/home/video"><div
+                    style={{
+                      backgroundColor: 'white', height: '2em', width: '2em', display: 'inline-block',
+                    }}
+                  >
+                    <Link to="/home/video">1</Link>
+                  </div></Link>
+                  <Link to="/home/video2"><div
+                    style={{
+                      marginLeft: '2em',
+                      marginBottom: '0.3em',
+                      backgroundColor: 'blue', height: '2em', width: '2em', display: 'inline-block',
+                    }}
+                  >
+                    2
+                  </div></Link>
+                </div>
               </div>
             </Row>
           </Col>

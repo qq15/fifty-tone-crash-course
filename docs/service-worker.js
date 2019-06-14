@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fifty-tone-crash-course/precache-manifest.cf2da955695b6df7b55053862fc4debd.js"
+  "/fifty-tone-crash-course/precache-manifest.766e66987f19cd75943bc5e8b10e93a5.js"
 );
 
 self.addEventListener('message', (event) => {
