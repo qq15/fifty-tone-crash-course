@@ -213,14 +213,11 @@ export default class Video extends PureComponent {
                 <span
                   style={{fontSize: '0.9em',}}
                 >弹幕列表 <Icon type="more" /></span>
-                <span>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </span>
                 <span
-                  style={{fontSize: '0.7em',}}
+                  style={{
+                    fontSize: '0.7em',
+                    paddingLeft: '12em',
+                  }}
                 >{this.state.barrageListStatus}</span>
               </div>
               <Timeline
@@ -259,15 +256,10 @@ export default class Video extends PureComponent {
                 </span>
                 <span
                   onClick={this.onSlectionClick}
-                >
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </span>
-                <span
-                  onClick={this.onSlectionClick}
-                  style={{fontSize: '0.7em',}}
+                  style={{
+                    fontSize: '0.7em',
+                    paddingLeft: '12em',
+                  }}
                 >1/2</span>
                 <List 
                   style={{
