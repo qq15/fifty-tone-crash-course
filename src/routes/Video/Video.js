@@ -216,7 +216,7 @@ export default class Video extends PureComponent {
                 <span
                   style={{
                     fontSize: '0.7em',
-                    paddingLeft: '12em',
+                    paddingLeft: '9em',
                   }}
                 >{this.state.barrageListStatus}</span>
               </div>
@@ -257,8 +257,9 @@ export default class Video extends PureComponent {
                 <span
                   onClick={this.onSlectionClick}
                   style={{
+                    display: 'inline-block',
                     fontSize: '0.7em',
-                    paddingLeft: '12em',
+                    paddingLeft: '9em',
                   }}
                 >1/2</span>
                 <List 
