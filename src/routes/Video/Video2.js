@@ -63,6 +63,7 @@ export default class Video extends PureComponent {
     bulletValue: '',
     timeLineDispay: 'none',
     videoSelection: faThList,
+    selectionListDisplay: 'block',
   };
 
   handleInputChange = e => {
@@ -97,9 +98,15 @@ export default class Video extends PureComponent {
 
   onSlectionClick = () => {
     if (this.state.videoSelection===faThList) {
-      this.setState({videoSelection: faThLarge});
+      this.setState({
+        videoSelection: faThLarge,
+        selectionListDisplay: 'none',
+      });
     } else {
-      this.setState({videoSelection: faThList});
+      this.setState({
+        videoSelection: faThList,
+        selectionListDisplay: 'block',
+      });
     }
   }
 
@@ -263,6 +270,9 @@ export default class Video extends PureComponent {
                   style={{fontSize: '0.7em',}}
                 >1/2</span>
                 <List 
+                  style={{
+                    display: this.state.selectionListDisplay,
+                  }}
                   header={
                     <Link to="/home/video" style={{textDecoration: 'none', color: 'rgba(0,0,0,.5)', fontSize: '0.9em'}}>
                       <div onClick={this.onP1Click}>
