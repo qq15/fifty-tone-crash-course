@@ -18,6 +18,26 @@ const sleep = delay =>
 
 const videoNames = [''];
 
+const vsBtnStyle = {
+  lineHeight: '38px',
+  marginTop: '10px',
+  marginBottom: '0.9em',
+  marginRight: '0.7em',
+  width: '60px',
+  height: '40px',
+};
+
+const vsBtnPrimaryStyle = {
+  lineHeight: '38px',
+  marginTop: '10px',
+  marginBottom: '0.9em',
+  marginRight: '0.7em',
+  width: '60px',
+  height: '40px',
+  borderColor: '#03a0d6',
+  background: '#03a0d6',
+};
+
 const addressCardStyle = {
   borderRadius: 4,
   marginBottom: '0.59em',
@@ -65,6 +85,17 @@ export default class Video extends PureComponent {
     videoSelection: faThList,
     selectionListDisplay: 'block',
   };
+
+  componentWillMount() {
+    const global = this;
+    try {
+      global.setState({selectionListDisplay: this.props.location.state.showMethod === 'button' ? 'none' : 'block'});
+    }
+    catch {
+    }
+    finally {
+    }
+  }
 
   handleInputChange = e => {
     this.setState({
@@ -284,22 +315,10 @@ export default class Video extends PureComponent {
                   renderItem={item => <List.Item>{item}</List.Item>}
                 />
                 <div style={{display: this.state.selectionListDisplay === 'block' ? 'none' : 'block'}}>
-                  <Link to="/home/video"><div
-                    style={{
-                      backgroundColor: 'blue', height: '2em', width: '2em', display: 'inline-block',
-                    }}
-                  >
-                    <Link to="/home/video">1</Link>
-                  </div></Link>
-                  <Link to="/home/video2"><div
-                    style={{
-                      marginLeft: '2em',
-                      marginBottom: '0.3em',
-                      backgroundColor: 'white', height: '2em', width: '2em', display: 'inline-block',
-                    }}
-                  >
-                    2
-                  </div></Link>
+                  <Button type="primary" style={vsBtnPrimaryStyle}>1</Button>
+                  <Link to={{ pathname : '/home/video2', state: { showMethod: 'button' }}}>
+                    <Button type="default" style={vsBtnStyle}>2</Button>
+                  </Link>
                 </div>
               </div>
             </Row>
