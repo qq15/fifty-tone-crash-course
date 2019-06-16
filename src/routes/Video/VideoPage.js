@@ -39,19 +39,6 @@ const barraggeListCardStyle = {
   textAlign: 'left',
 };
 
-const videoSelectionStyle = {
-  background: '#f4f4f4',
-  borderRadius: 4,
-  border: 0,
-  fontSize: '1.5em',
-  margin: 'auto',
-  marginBottom: '1.2em',
-  paddingTop: '0.5em',
-  paddingLeft: '0.9em',
-  overflow: 'hidden',
-  textAlign: 'left',
-};
-
 export default class VideoPage extends PureComponent {
 
   state = {
@@ -80,8 +67,21 @@ export default class VideoPage extends PureComponent {
         type: "changeCurrentPartTo2"
       })} else {
         return;
+    }
+    try {
+      if(!(videoStore.getState()[`av${parseInt(av)}`].p2) ||
+        !(videoStore.getState()[`av${parseInt(videoStore.getState().currentAv)}`].p2)
+      ) {
+        videoStore.dispatch({
+          type: "changeVideoSelectionDisplay",
+        });
       }
     }
+    catch{
+    }
+    finally{
+    }
+  }
 
   handleInputChange = e => {
     this.setState({
@@ -227,7 +227,19 @@ export default class VideoPage extends PureComponent {
                 }
               </Timeline>
               <div
-                style={videoSelectionStyle}
+                style={{
+                  background: '#f4f4f4',
+                  borderRadius: 4,
+                  border: 0,
+                  fontSize: '1.5em',
+                  margin: 'auto',
+                  marginBottom: '1.2em',
+                  paddingTop: '0.5em',
+                  paddingLeft: '0.9em',
+                  overflow: 'hidden',
+                  textAlign: 'left',
+                  display: videoStore.getState().videoSelectionDisplay,
+                }}
               >
                 <span
                   style={{fontSize: '0.9em',}}
@@ -249,9 +261,7 @@ export default class VideoPage extends PureComponent {
                   1/2
                 </span>
                 <SelectionList />
-                <div style={{display: videoStore.getState().selectionListDisplay === 'block' ? 'none' : 'block'}}>
-                  <SelectionButtons />
-                </div>
+                <SelectionButtons />
               </div>
               <Rec />
             </Row>

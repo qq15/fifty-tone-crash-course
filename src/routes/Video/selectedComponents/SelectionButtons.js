@@ -114,6 +114,9 @@ export default function SelectionButtons(props) {
     }
   }
   return (
-    <SelectedButtons />
+
+    <div style={{display: videoStore.getState().selectionListDisplay === 'block' ? 'none' : 'block'}}>
+      <SelectedButtons />
+    </div>
   );
 }

@@ -15,9 +15,6 @@ const onPartClick = (num) => {
 function av1p1List() {
   return (
     <List 
-      style={{
-        display: videoStore.getState().selectionListDisplay,
-      }}
       header={
         <div
           style={{textDecoration: 'none', color: 'rgba(0,0,0,.5)', fontSize: '0.9em'}}
@@ -49,9 +46,6 @@ function av1p1List() {
 function av1p2List() {
   return (
     <List 
-      style={{
-        display: videoStore.getState().selectionListDisplay,
-      }}
       header={
         <Link to={videoStore.getState().av1.p1.full_path}>
           <div
@@ -80,9 +74,6 @@ function av1p2List() {
 function av2p1List() {
   return (
     <List 
-      style={{
-        display: videoStore.getState().selectionListDisplay,
-      }}
       header={
         <div
           style={{textDecoration: 'none', color: 'rgba(0,0,0,.5)', fontSize: '0.9em'}}
@@ -114,9 +105,6 @@ function av2p1List() {
 function av2p2List() {
   return (
     <List 
-      style={{
-        display: videoStore.getState().selectionListDisplay,
-      }}
       header={
         <Link to={videoStore.getState().av2.p1.full_path}>
           <div
@@ -145,9 +133,6 @@ function av2p2List() {
 function av3p1List() {
   return (
     <List 
-      style={{
-        display: videoStore.getState().selectionListDisplay,
-      }}
       size="small"
       bordered={false}
       dataSource={['小奶音']}
@@ -179,6 +164,8 @@ export default function SelectionList() {
   }
 
   return (
-    <SelectionList />
+    <div style={{display: videoStore.getState().selectionListDisplay}}>
+      <SelectionList />
+    </div>
   );
 }

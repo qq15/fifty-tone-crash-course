@@ -8,6 +8,7 @@ const h2style = {
   fontSize: '16px',
   color: '#222',
   marginBottom: 16,
+  marginLeft: '10px',
 };
 
 const videoPageCardListStyle = {
@@ -72,6 +73,19 @@ const onRecClick = (value) => {
   videoStore.dispatch({
     type: "changeCurrentPartTo1"
   });
+  const currentHash = document.location.hash;
+  const avRegex = /^#\/video\/av(\d+).*?(\d+)?$/;
+  const arr = currentHash.match(avRegex);
+  const av = arr[1];
+  if(!(videoStore.getState()[`av${parseInt(av)}`].p2) ||
+     !(videoStore.getState()[`av${parseInt(videoStore.getState().currentAv)}`].p2 ||
+     !(videoStore.getState()[`av${parseInt(value)}`].p2))
+    ) {
+        videoStore.dispatch({
+          type: "changeVideoSelectionDisplay",
+        });
+      }
+
 }
 
 export default function CardsOfRecs (props) {
@@ -102,7 +116,7 @@ export default function CardsOfRecs (props) {
         return (
           <Link to={item.path} key={index}>
             <Row
-              onClick={() => onRecClick(item.path[9])}
+              onClick={() => onRecClick(parseInt(item.path[9]))}
               style={{
                 marginBottom: '6px',
               }}

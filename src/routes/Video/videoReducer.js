@@ -4,6 +4,7 @@ import { faThLarge } from '@fortawesome/free-solid-svg-icons'
 const dState = {
   barrageListStatus: '展开',
   timeLineDisplay: "none",
+  videoSelectionDisplay: "block",
   selectionListDisplay: "block",
   selectionIcon: faThList,
   currentAv: 1,
@@ -75,6 +76,10 @@ const dState = {
 
 export default (state = dState, action) => {
   switch (action.type) {
+    case "changeVideoSelectionDisplay":
+      return Object.assign({}, state, {
+        videoSelectionDisplay: state.videoSelectionDisplay === "block" ? "none" : "block",
+      });
     case "changeSelectionListDisplay":
       return Object.assign({}, state, {
         selectionListDisplay: state.selectionListDisplay === 'block' ? 'none' : 'block',
