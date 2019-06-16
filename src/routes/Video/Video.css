@@ -6,11 +6,21 @@ div.videoTitle {
   color: #212121;
   line-height: 26px;
   height: 26px;
-  margin-bottom: 12px;
-  margin-Top: 5em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  margin-bottom: 8px;
+  margin-Top: 73px;
+  margin-left: -1px;
+}
+
+div.videoTime {
+  color: #999;
+  display: block;
+  font-family: -apple-system,BlinkMacSystemFont,
+    Helvetica Neue,Helvetica,Arial,PingFang SC,
+    Hiragino Sans GB,Microsoft YaHei,sans-serif;
+  height: 12px;
+  font-size: 100%;
+  text-align: left;
+  margin-bottom: 8px;
 }
 
 div.videoDescription {
@@ -44,7 +54,7 @@ div.videoDescription {
 .block {
   position: absolute;
   margin-top: -10em;
-  animation: barrage 5s linear 0s;
+  animation: barrage 7s linear 0s;
   font-size: 1.2em;
   color: white;
   font-weight: 800;

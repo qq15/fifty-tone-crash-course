@@ -15,26 +15,34 @@ export default class Footer extends Component {
             <Card title="相关资源" bordered={false} loading={store.getState().logoIsLoading && window.innerWidth>=740 }
               hoverable={true} style={{ height: 200, }}
             >
-              <div style={{ marginTop: -12, marginBottom: -22, }}>
-                <a href="https://jp.hjenglish.com/">
-                  <img 
-                    src={hjImgURL}
-                    alt="沪江日语"
-                  /> 沪江日语
-                </a>
-              </div><br /><br />
-              <a href="https://www.memrise.com/">
-                <img 
-                  src={memImgURL}
-                  alt="memrise"
-                /> memrise
-              </a><br /><br />
-              <a href="https://www.cn.emb-japan.go.jp">
-                <img
-                  src={jpImgURL}
-                  alt="日本"
-                /> 驻华使馆
-              </a>
+              <div style={{ marginTop: -6, marginBottom: 0, }}>
+                <div style={{ marginBottom: 8 }}>
+                  <a href="https://jp.hjenglish.com/">
+                    <img 
+                      src={hjImgURL}
+                      alt="沪江日语"
+                    /> 沪江日语
+                  </a>
+                </div>
+                <div
+                  style={{ marginBottom: 8, marginLeft: -8 }}
+                >
+                  <a href="https://www.memrise.com/">
+                    <img 
+                      src={memImgURL}
+                      alt="memrise"
+                    /> memrise
+                  </a>
+                </div>
+                <div>
+                  <a href="https://www.cn.emb-japan.go.jp">
+                    <img
+                      src={jpImgURL}
+                      alt="日本"
+                    /> 驻华使馆
+                  </a>
+                </div>
+              </div>
             </Card>
           </Col>
           <Col span={8}>

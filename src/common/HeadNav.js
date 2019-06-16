@@ -65,7 +65,7 @@ export default class HeadNav extends Component {
                     </Link>
                   </Menu.Item>
                   <Menu.Item key="aboutme">
-                    <Link to="/home/video">
+                    <Link to="/video/av1">
                       <Icon type="video-camera" />视频
                     </Link>
                   </Menu.Item>
