@@ -8,7 +8,7 @@ const h2style = {
   fontSize: '16px',
   color: '#222',
   marginBottom: 16,
-  marginLeft: '10px',
+  marginLeft: '16px',
 };
 
 const videoPageCardListStyle = {
@@ -96,7 +96,7 @@ export default function CardsOfRecs (props) {
   for (let i in storeClone) {
     if (!!(i.match(/^av\d+$/)) && i !== avStr) {
       listOfCardInfo.push({
-        path: storeClone[i].path,
+        path: storeClone[i].p1.full_path,
         title: storeClone[i].p1.title,
         up: storeClone[i].p1.up,
         statics: storeClone[i].p1.statics,

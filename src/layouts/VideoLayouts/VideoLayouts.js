@@ -14,6 +14,8 @@ export default class VideoLayout extends Component {
           <Route path={this.props.match.url+'/av1'} component={VideoPage} />
           <Route path={this.props.match.url+'/av2'} component={VideoPage} />
           <Route path={this.props.match.url+'/av3'} component={VideoPage} />
+          <Route path={this.props.match.url+'/av4'} component={VideoPage} />
+          <Route path={this.props.match.url+'/av5'} component={VideoPage} />
         </div>
         <Footer />
       </div>

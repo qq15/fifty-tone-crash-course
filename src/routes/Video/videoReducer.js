@@ -2,15 +2,9 @@ import { faThList } from '@fortawesome/free-solid-svg-icons';
 import { faThLarge } from '@fortawesome/free-solid-svg-icons'
 
 const dState = {
-  barrageListStatus: '展开',
-  timeLineDisplay: "none",
-  videoSelectionDisplay: "block",
-  selectionListDisplay: "block",
-  selectionIcon: faThList,
   currentAv: 1,
   currentPart: 1,
   av1: {
-    path: "/video/av1",
     p1: {
       bav: 17933940,
       title: "超可爱的动物平假名之歌！！",
@@ -34,7 +28,6 @@ const dState = {
     }
   },
   av2: {
-    path: "/video/av2",
     p1: {
       bav: 17934099,
       title: "花泽香菜教你说日语五十音！耳朵真的怀孕了！",
@@ -43,7 +36,7 @@ const dState = {
       statics: "19.5万播放 · 232弹幕",
       part: 1,
       pic: "花泽香菜教你日语五十音.png",
-      full_path: "/video/av2/?p=1",
+      full_path: "/video/av2",
       flv: "花泽香菜教你日语五十音"
     },
     p2: {
@@ -58,7 +51,6 @@ const dState = {
     }
   },
   av3: {
-    path: "/video/av3",
     p1: {
       bav: 17953444,
       title: "日本小孩都是这么学五十音的！小奶音绝了！",
@@ -69,6 +61,32 @@ const dState = {
       pic: "小奶音.png",
       full_path: "/video/av3",
       flv: "小奶音"
+    }
+  },
+  av4: {
+    p1: {
+      bav: 55885211,
+      title: "日语五十音记不住？唱就完事儿啦",
+      time: "2019-06-17 15:55:53",
+      up: "新东方在线日语",
+      statics: "137播放 · 0弹幕",
+      part: 1,
+      pic: "日语五十音记不住？唱就完事儿啦.png",
+      full_path: "/video/av4",
+      flv: "日语五十音记不住？唱就完事儿啦",
+    }
+  },
+  av5: {
+    p1: {
+      bav: 50379331,
+      title: "日语朗读？？傲娇台词版五十音图",
+      time: "2019-04-25 03:39:09",
+      up: "你好小鸡",
+      statics: "217播放 · 1弹幕",
+      part: 1,
+      pic: "日语朗读？？傲娇台词版五十音图.png",
+      full_path: "/video/av5",
+      flv: "日语朗读？？傲娇台词版五十音图",
     }
   }
 };

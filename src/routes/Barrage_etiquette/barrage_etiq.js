@@ -73,7 +73,7 @@ export default function BarrageEtiquette() {
         </h2>
         <List
           header={<div>违反以下规则都将受到相应处理</div>}
-          footer={<div>相关社区规则详情，可参考：</div>}
+          footer={<div>相关社区规则详情，待拟。</div>}
           bordered={true}
           dataSource={bannedBarrages}
           renderItem={(item) => (<List.Item>{item}</List.Item>)}
