@@ -1,5 +1,6 @@
 import React from 'react';
 import videoStore from './videoStore';
+import store from './videoInfo/videoInfoStore';
 import { Row, Col } from 'antd';
 import { Link } from 'react-router-dom';
 
@@ -85,7 +86,9 @@ const onRecClick = (value) => {
           type: "changeVideoSelectionDisplay",
         });
       }
-
+  store.dispatch({
+    type: "clearBullets",
+  });
 }
 
 export default function CardsOfRecs (props) {
