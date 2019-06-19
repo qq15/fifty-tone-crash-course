@@ -13,19 +13,30 @@ const onPartClick = (num) => {
 }
 
 function PList(props) {
+  const shouldShowLink = (path) => {
+    const avRegex = /^\/video\/av(\d+).*?(\d+)?$/;
+    const p = parseInt(path.match(avRegex)[2]);
+    const currentP = videoStore.getState().currentPart;
+    return ( (currentP === p) || ((currentP === 1) && isNaN(p))) ? false : true
+  }
   return (
     <div>
     {
-      props.videoNames.map((item, index) => (
-        <Link to={item.path}>
+      props.videoNames.map(
+        (item, index) => (
           <ul
             key={index}
-            onClick={() => onPartClick(index+1)}
             style={{display: 'block', color: 'rgba(0,0,0,.5)', fontSize: '0.72em', marginTop: '1.6em', marginBottom: '1em' }}
           >
-            P{index+1} {item.title}
+            <Link style={{color: 'rgba(0,0,0,.5)',display: shouldShowLink(item.path)? 'block':'none'}} to={item.path}
+              onClick={() => onPartClick(index+1)}
+            >
+              P{index+1} {item.title}
+            </Link>
+            <li style={{display: shouldShowLink(item.path)? 'none':'block'}}>
+              P{index+1} {item.title}
+            </li>
           </ul>
-          </Link>
         )
       )
     }

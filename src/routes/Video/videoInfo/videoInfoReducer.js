@@ -1,3 +1,4 @@
+import moment from 'moment';
 import { faThList } from '@fortawesome/free-solid-svg-icons';
 import { faThLarge } from '@fortawesome/free-solid-svg-icons'
 
@@ -24,6 +25,10 @@ export default (state = dState, action) => {
       return Object.assign({}, state, {
         videoSelectionDisplay: state.videoSelectionDisplay === "block" ? "none" : "block",
       });
+    case "changeVideoSelectionDisplayToNone":
+      return Object.assign({}, state, {
+        videoSelectionDisplay: "none",
+      });
     case "changeSelectionListDisplay":
       return Object.assign({}, state, {
         selectionListDisplay: state.selectionListDisplay === 'block' ? 'none' : 'block',
@@ -42,7 +47,8 @@ export default (state = dState, action) => {
       });
     case "pushBarrageList":
       return Object.assign({}, state, {
-        barrageList: [...state.barrageList, state.barrageInputValue],
+        barrageList: [...state.barrageList,
+          {time: `${moment().format('HH:mm:ss')} `, content: state.barrageInputValue}],
       });
     case "changeBarrageInputValue":
       return Object.assign({}, state, {
@@ -53,9 +59,8 @@ export default (state = dState, action) => {
         bulletScreen: [...state.bulletScreen, state.barrageInputValue],
       });
     case "shiftBulletScreen":
-      const [, ...newBulletScreen] = state.bulletScreen;
       return Object.assign({}, state, {
-        bulletScreen: newBulletScreen,
+        bulletScreen: state.bulletScreen.slice(1),
       });
     default:
       return state;

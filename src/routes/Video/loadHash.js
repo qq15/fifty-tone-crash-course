@@ -23,11 +23,9 @@ export default function loadHash() {
       return;
   }
   try {
-    if(!(videoStore.getState()[`av${parseInt(av)}`].p2) ||
-      !(videoStore.getState()[`av${parseInt(videoStore.getState().currentAv)}`].p2)
-    ) {
+    if(!(videoStore.getState()[`av${parseInt(av)}`].p2)) {
       store.dispatch({
-        type: "changeVideoSelectionDisplay",
+        type: "changeVideoSelectionDisplayToNone",
       });
     }
     if((!!(videoStore.getState()[`av${parseInt(av)}`].p2) ||

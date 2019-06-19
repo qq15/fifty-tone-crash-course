@@ -66,32 +66,28 @@ const cardDescription = {
   textAlign: 'left',
 };
 
-const onRecClick = (value) => {
-  videoStore.dispatch({
-    type: "changeCurrentAv",
-    value,
-  });
-  videoStore.dispatch({
-    type: "changeCurrentPartTo1"
-  });
-  const currentHash = document.location.hash;
-  const avRegex = /^#\/video\/av(\d+).*?(\d+)?$/;
-  const arr = currentHash.match(avRegex);
-  const av = arr[1];
-  if(!(videoStore.getState()[`av${parseInt(av)}`].p2) ||
-     !(videoStore.getState()[`av${parseInt(videoStore.getState().currentAv)}`].p2 ||
-     !(videoStore.getState()[`av${parseInt(value)}`].p2))
-    ) {
-        videoStore.dispatch({
-          type: "changeVideoSelectionDisplay",
-        });
-      }
-  store.dispatch({
-    type: "clearBullets",
-  });
-}
+
 
 export default function CardsOfRecs (props) {
+  const onRecClick = (path) => {
+    const avRegex = /^\/video\/av(\d+).*?(\d+)?$/;
+    const av = parseInt(path.match(avRegex)[1]);
+    videoStore.dispatch({
+      type: "changeCurrentAv",
+      value: av,
+    });
+    videoStore.dispatch({
+      type: "changeCurrentPartTo1"
+    });
+    if(!(videoStore.getState()[`av${parseInt(av)}`].p2)) {
+      store.dispatch({
+        type: "changeVideoSelectionDisplayToNone",
+      });
+    }
+    store.dispatch({
+      type: "clearBullets",
+    });
+  }
   const avStr = "av" + videoStore.getState().currentAv;
   let storeClone = Object.assign({}, videoStore.getState());
   delete storeClone[avStr];
@@ -119,7 +115,7 @@ export default function CardsOfRecs (props) {
         return (
           <Link to={item.path} key={index}>
             <Row
-              onClick={() => onRecClick(parseInt(item.path[9]))}
+              onClick={() => onRecClick(item.path)}
               style={{
                 marginBottom: '6px',
               }}
