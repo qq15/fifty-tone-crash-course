@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import BAddress from './BAddress';
 import BulletScreenAndSendBarrage from './videoInfo/SendBarrage';
 import VideoInfo from './videoInfo/VideoInfo';
+import Comments from './CommentApp/CommentApp';
 import SelectedVideo from './selectedComponents/SelectedVideo';
 import { Col, Row, } from 'antd';
 import initialSize from './utils/flexiable';
@@ -25,6 +26,7 @@ export default class VideoPage extends PureComponent {
         <Col span={13}>
           <SelectedVideo />
           <BulletScreenAndSendBarrage />
+          <Comments />
         </Col>
         <Col span={5}>
           <Col gutter={5}>
