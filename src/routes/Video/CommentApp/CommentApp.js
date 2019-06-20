@@ -10,7 +10,9 @@ const { TextArea } = Input;
 
 const CommentList = ({ comments }) => (
   <List
-    style={{textAlign: 'left',}}
+    style={{
+      textAlign: 'left', display: 'block', whiteSpace: 'normal', wordBreak : 'break-all',  wordWrap: 'break-word',
+    }}
     dataSource={comments}
     header={`${comments.length} ${comments.length > 1 ? 'replies' : 'reply'}`}
     itemLayout="horizontal"

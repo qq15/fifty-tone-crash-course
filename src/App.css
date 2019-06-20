@@ -25,6 +25,27 @@
   color: #61dafb;
 }
 
+li {
+  display: list-item;
+}
+
+/*
+ul li {
+  display: block !important;
+}
+
+li {
+   word-wrap: break-word;
+   text-align: left;
+   display: block;
+   white-space: normal;
+   word-break: break-all;
+   float: left;
+   width: 40px;
+   margin-right: 8px;
+}
+*/
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

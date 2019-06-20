@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HeadNav from '../../common/HeadNav';
+import HeadNav from '../../common/HeadNav/App';
 import Footer from '../../common/Footer';
 import { Route } from 'react-router-dom';
 import VideoPage from '../../routes/Video/VideoPage';
