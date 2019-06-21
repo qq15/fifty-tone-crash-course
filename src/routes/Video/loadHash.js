@@ -32,9 +32,9 @@ export default function loadHash() {
       !!(videoStore.getState()[`av${parseInt(videoStore.getState().currentAv)}`].p2)) && store.getState().videoSelectionDisplay !== 'block'
     ) {
       store.dispatch({
-        type: "changeVideoSelectionDisplay",
+        type: "changeVideoSelectionDisplayToBlock",
       });
-    }
+    } // 如果视频没有第二部分或者视频有第二部分而且当前视频选集不展示，那么改变视频选集展示状态
   }
   catch{
   }

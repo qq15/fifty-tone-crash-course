@@ -25,6 +25,10 @@ export default (state = dState, action) => {
       return Object.assign({}, state, {
         videoSelectionDisplay: state.videoSelectionDisplay === "block" ? "none" : "block",
       });
+    case "changeVideoSelectionDisplayToBlock":
+      return Object.assign({}, state, {
+        videoSelectionDisplay: "block",
+      });
     case "changeVideoSelectionDisplayToNone":
       return Object.assign({}, state, {
         videoSelectionDisplay: "none",

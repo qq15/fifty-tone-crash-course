@@ -9,7 +9,6 @@ const h2style = {
   fontSize: '16px',
   color: '#222',
   marginBottom: 16,
-  marginLeft: '16px',
 };
 
 const videoPageCardListStyle = {
@@ -83,7 +82,12 @@ export default function CardsOfRecs (props) {
       store.dispatch({
         type: "changeVideoSelectionDisplayToNone",
       });
-    }
+    } // 如果视频没有第二部分，改变视频选集展示状态为"none"
+    if(!!(videoStore.getState()[`av${parseInt(videoStore.getState().currentAv)}`].p2) && store.getState().videoSelectionDisplay !== 'block') {
+      store.dispatch({
+        type: "changeVideoSelectionDisplayToBlock",
+      });
+    } // 如果视频有第二部分而且当前视频选集不展示，改变视频选集展示状态为"block"
     store.dispatch({
       type: "clearBullets",
     });
@@ -119,7 +123,7 @@ export default function CardsOfRecs (props) {
               style={{
                 marginBottom: '6px',
               }}
-              gutter={0}
+              gutter={20}
             >
               <Col span={12}>
               <img

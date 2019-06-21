@@ -2,8 +2,6 @@ import React, { PureComponent } from 'react';
 import store from '../videoInfo/videoInfoStore';
 import { Comment, Avatar, Form, Button, List, Input } from 'antd';
 import moment from 'moment';
-// import CommentInput from './CommentInput';
-// import CommentList from './CommentList';
 
 
 const { TextArea } = Input;

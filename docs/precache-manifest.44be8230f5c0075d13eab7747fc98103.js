@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3da9d4bb527d0400ef3464983fc7ee45",
+    "revision": "a482dcaca56386a015c156d00ce150a8",
     "url": "/fifty-tone-crash-course/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fifty-tone-crash-course/static/css/2.ff09110c.chunk.css"
   },
   {
-    "revision": "311ec5cc97976f2a43c0",
+    "revision": "82b9b021f198cecdb456",
     "url": "/fifty-tone-crash-course/static/css/main.806327e1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fifty-tone-crash-course/static/js/2.54a89ec8.chunk.js"
   },
   {
-    "revision": "311ec5cc97976f2a43c0",
-    "url": "/fifty-tone-crash-course/static/js/main.1043ef75.chunk.js"
+    "revision": "82b9b021f198cecdb456",
+    "url": "/fifty-tone-crash-course/static/js/main.1606532d.chunk.js"
   },
   {
     "revision": "fdd9317bf8c71a943710",
