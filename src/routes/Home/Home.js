@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { Card, Carousel } from 'antd';
 import JpScripts from './JP_scripts';
 import FiftyToneMap from './FiftyToneMap';
-import hiraChartURL from '../../assets/images/hiragana-chart.jpg';
 import threeWay1ImgURL from '../../assets/images/threeWay1.png';
 import threeWay2ImgURL from '../../assets/images/threeWay2.png';
 import threeWay3ImgURL from '../../assets/images/threeWay3.png';
@@ -69,11 +68,6 @@ const Charts = () => (
     >
       <Meta title="平假名助记符(Hiragana Mnemonics)" description="www.nippon.com" />
     </Card>
-    <Card
-      hoverable
-      cover={<img alt="Hiragana Mnemonic Chart" src={hiraChartURL} />}
-    >
-    </Card>
   </div>
 );
 
@@ -81,8 +75,22 @@ const Home = (props) => (
   <div id="Home">
     <TopCarousel />       
     <JpScripts />
-    <Charts />
+    <Card title="写一写" style={{ width: 350, margin: '60px 400px 10px 720px'}}>
+      <p>点击录像机图标进入对应假名的书写视频页面</p>
+    </Card>
     <FiftyToneMap />
+    <Card
+      title="有英语基础的同学可以读这篇文章"
+      style={{ width: 350, margin: '60px 400px 10px 720px'}}
+    >
+      <p><a
+        href="https://www.nippon.com/en/views/b05603/hiragana-the-first-building-block-of-written-japanese.html"
+      >
+        平假名：日语的第一个基石。 
+      </a></p>
+      <p>有英语基础的同学会发现下面这张图很有意思。</p>
+    </Card>
+    <Charts />
   </div>
 )
 export default Home;

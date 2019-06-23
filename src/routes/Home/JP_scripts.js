@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Collapse, Icon, Select } from 'antd';
 import store from '../../Store';
 import JPMapImgURL from '../../assets/images/JP_map.png';
+import Prerequisite from './Prerequisite';
 import './Jp_scripts.css';
 
 const { Panel } = Collapse;
@@ -120,6 +121,7 @@ const ExtraContent = (props) => (
 
 const JpScripts = (props) => (
   <div id="JpScripts" style={{marginTop: "6%", marginBottom: "4%", }}>
+    <Prerequisite />
     <FoldingPannel />
     <ExtraContent />
   </div>
