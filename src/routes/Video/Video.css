@@ -69,3 +69,8 @@ div.videoDescription {
 .tcBtn {
   display: inline;
 }
+
+video {
+  object-fit: fill;
+  max-height: 680px;
+}

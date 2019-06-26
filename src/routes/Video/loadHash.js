@@ -7,7 +7,7 @@ export default function loadHash() {
   const avRegex = /^#\/video\/av(\d+).*?(\d+)?$/;
   const arr = currentHash.match(avRegex);
   const av = arr[1];
-  const p = arr[2];
+  const p = (arr[2]);
   videoStore.dispatch({
     type: "changeCurrentAv",
     value: parseInt(av),
@@ -20,7 +20,10 @@ export default function loadHash() {
     videoStore.dispatch({
       type: "changeCurrentPartTo2"
     })} else {
-      return;
+      videoStore.dispatch({
+        type: "changeCurrentPart",
+        value: parseInt(p) ? parseInt(p) : undefined,
+      })
   }
   try {
     if(!(videoStore.getState()[`av${parseInt(av)}`].p2)) {

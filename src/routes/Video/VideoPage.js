@@ -14,6 +14,9 @@ import './Video.css';
 initialSize(window, window['lib'] || (window['lib'] = {}));
 
 export default class VideoPage extends PureComponent {
+  componentWillMount() {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
   render() {
     return (
       <React.Fragment>
