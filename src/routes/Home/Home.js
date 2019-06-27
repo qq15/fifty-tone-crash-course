@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import { Card, Carousel } from 'antd';
+import { Card, Carousel, Icon } from 'antd';
 import JpScripts from './JP_scripts';
+import AudioWrap from './AudioWrap/AudioWrap';
 import FiftyToneMap from './FiftyToneMap';
 import threeWay1ImgURL from '../../assets/images/threeWay1.png';
 import threeWay2ImgURL from '../../assets/images/threeWay2.png';
@@ -75,7 +76,8 @@ const Home = (props) => (
   <div id="Home">
     <TopCarousel />       
     <JpScripts />
-    <Card title="写一写" style={{ width: 350, margin: '60px 400px 10px 720px'}}>
+    <AudioWrap />
+    <Card title={<span><Icon type="edit" />&nbsp;写一写</span>} style={{ width: 350, margin: '60px 400px 10px 720px'}}>
       <p>点击录像机图标进入对应假名的书写视频页面</p>
     </Card>
     <FiftyToneMap />

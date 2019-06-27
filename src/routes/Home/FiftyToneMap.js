@@ -16,7 +16,7 @@ export default class FiftyToneMap extends PureComponent {
       <React.Fragment>
       <div style={{ marginTop: '1em', paddingTop: '1em', }}>
         <div className="title">
-          <p>五十音图</p>
+          <p><Icon type="table" />&nbsp;五十音图</p>
         </div>
         <div className="description">
           <p>50トーンマップ</p>
