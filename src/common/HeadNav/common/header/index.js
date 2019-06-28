@@ -23,7 +23,7 @@ class Header extends Component{
         <Nav>
           <NavItem className={'left active'}><Link to="/home" style={{color: "#333"}}>首页</Link></NavItem>
           <NavItem className={'left'}><Link to="/video/av1" style={{color: "#333"}}>视频</Link></NavItem>
-          <NavItem className={'left'}><Link to="/video/tests" style={{color: "#333"}}>测试</Link></NavItem>
+          <NavItem className={'left'}><Link to="/home/tests" style={{color: "#333"}}>自我评价</Link></NavItem>
           <NavItem className={'right'}>已登陆</NavItem>
           <NavItem className={'right'}>
               <span className="iconfont">&#xe601;</span>
