@@ -19,7 +19,7 @@
     "gulp": "^4.0.2",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "nav-react": "^1.0.5",
     "nprogress": "^0.2.0",
     "react": "^16.8.6",
